@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+h1 {
+  color: white;
+  font-family: "Henny Penny", cursive;
+}
+
+.mitte {
+  background-color: bisque;
+  border: 5px pink solid;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+  
+}
+.mitte:hover {
+  border: 10px red solid;
+  background-color: blueviolet;
+  color: white;
+}
+#playbutton {
+  padding: 30px;
+  border-radius: 40px;
+  background-color: azure;
+  font-family: "Henny Penny", cursive;
+  font-size: 24px;
+  box-shadow: 0 12px 16px 0 rgba(236, 30, 109, 0.671),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#playbutton:hover {
+  background-color: yellow;
+  box-shadow: 0 12px 16px 0 rgba(238, 38, 38, 0.829),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#playbutton:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#playbutton:active:after {
+  background: transparent;
+}
+
+#playbutton:hover:before {
+  opacity: 1;
+}
+
+#playbutton:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#newgame {
+  padding: 20px;
+  border-radius: 30px;
+  font-family: "Henny Penny", cursive;
+  font-size: 24px;
+}
+#newgame:hover {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+}

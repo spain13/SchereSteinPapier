@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website name</title>
+        <meta charset="uft-8">
+        <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <main></main>
+            <h1>Schere Stein Papier</h1>
+            <!--input placeholder="What needs to be done?" autofocus id="input-box"-->
+            <div class="mitte">
+                <input class="toggle" type="checkbox" id="Schere">
+                <label> Schere <i class="bi bi-scissors"></i> </label>
+                <input class="toggle" type="checkbox" id="Stein">
+                <label for="input">Stein <i class="bi bi-hand-index"></i> </label>
+                <input class="toggle" type="checkbox" id="Papier">
+                <label for="toggle">Papier <i class="bi bi-envelope-paper-heart"></i> </label> <br> <br>
+                <button id="playbutton">Play</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 id="ausgabe"></h2>
+                <br>
+                <br>
+                <p>Wins <span id="wincounter">0</span></p>
+                <p>Loses <span id="losecounter">0</span></p><br><br>
+                <button id="newgame">Start a new game</button>
+            </div>
+        <script src="./asset/main.js"></script>
+        </main>  
+    </body>
+    </html>
